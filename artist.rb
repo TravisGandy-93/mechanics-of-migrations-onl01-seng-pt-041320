@@ -1,4 +1,4 @@
-class Artist < ActiveRecord:
+class Artist < ActiveRecord::Base
 sql = <<-SQL
   CREATE TABLE IF NOT EXISTS artists (
   id INTEGER PRIMARY KEY,
@@ -10,3 +10,4 @@ sql = <<-SQL
 SQL
  
 ActiveRecord::Base.connection.execute(sql)
+end 
