@@ -1,5 +1,5 @@
 class Artist < ActiveRecord::Base
-  def 
+  def self.create_table
 sql = <<-SQL
   CREATE TABLE IF NOT EXISTS artists (
   id INTEGER PRIMARY KEY,
@@ -11,4 +11,5 @@ sql = <<-SQL
 SQL
  
 ActiveRecord::Base.connection.execute(sql)
+  end 
 end 
