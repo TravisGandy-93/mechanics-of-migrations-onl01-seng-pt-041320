@@ -1,3 +1,4 @@
+class Artists
 sql = <<-SQL
   CREATE TABLE IF NOT EXISTS artists (
   id INTEGER PRIMARY KEY,
